@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function Header() {
+const Header = ({ children }: HeaderProps) => {
   return (
     <div className="header">
       <Link href="/" className="md:flex-1">
@@ -20,6 +20,7 @@ function Header() {
           className="mr-2 md:hidden"
         />
       </Link>
+      {children}
     </div>
   );
 }
