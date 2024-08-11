@@ -1,9 +1,10 @@
+import { CollaborativeRoom } from "@/components/CollaborativeRoom"
 
 
 function Document() {
   return (
     <div>
-      hghy
+      <CollaborativeRoom />
     </div>
   )
 }
