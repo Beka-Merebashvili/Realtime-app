@@ -3,9 +3,9 @@ import { CollaborativeRoom } from "@/components/CollaborativeRoom"
 
 function Document() {
   return (
-    <div>
+    <main className="flex w-full flex-col items-center">
       <CollaborativeRoom />
-    </div>
+    </main>
   )
 }
 
