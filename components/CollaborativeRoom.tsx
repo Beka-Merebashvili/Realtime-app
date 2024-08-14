@@ -11,6 +11,7 @@ import { Input } from "./ui/input";
 import { updateDocument } from "@/lib/actions/room.actions";
 
 export const CollaborativeRoom = ({ roomId, roomMetadata, users, currentUserType }: CollaborativeRoomProps) => {
+  currentUserType = 'editor'
 
   const [documentTitle, setDocumentTitle] = useState(roomMetadata.title);
   const [editing, setEditing] = useState(false);
