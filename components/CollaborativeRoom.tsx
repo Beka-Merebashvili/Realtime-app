@@ -12,7 +12,7 @@ import { updateDocument } from "@/lib/actions/room.actions";
 import Loader from "./Loader";
 
 export const CollaborativeRoom = ({ roomId, roomMetadata, users, currentUserType }: CollaborativeRoomProps) => {
-  currentUserType = 'editor'
+  
 
   const [documentTitle, setDocumentTitle] = useState(roomMetadata.title);
   const [editing, setEditing] = useState(false);
@@ -113,7 +113,7 @@ export const CollaborativeRoom = ({ roomId, roomMetadata, users, currentUserType
               </SignedIn>
             </div>
           </Header>
-          <Editor />
+          <Editor roomId={roomId} currentUserType={currentUserType} />
         </div>
       </ClientSideSuspense>
     </RoomProvider>
